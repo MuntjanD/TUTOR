@@ -118,6 +118,7 @@ namespace FirstGAME
             }
             else
              Console.WriteLine("See you again"); 
+            Console.ReadKey();
 
 
 
