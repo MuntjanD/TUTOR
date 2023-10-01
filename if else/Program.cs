@@ -12,7 +12,7 @@ namespace if_else
         {
             Console.WriteLine("enter aprtament nr. :");
             int flat = int.Parse(Console.ReadLine());
-            if (flat > 0 && flat <22) 
+            if (flat > 0 && flat < 21)
             {
                 Console.WriteLine("this flat in building 1");
             }

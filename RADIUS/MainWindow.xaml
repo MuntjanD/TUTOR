@@ -1,0 +1,32 @@
+﻿<Window x:Class="RADIUS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RADIUS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="Text_box_R">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFCA8D8D" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,35,0,0" TextWrapping="Wrap" Text="Bank Calculator" VerticalAlignment="Top" FontSize="24" Height="42" Width="228" RenderTransformOrigin="0.516,-5.541" Foreground="#FFF1F1F1" Opacity="{Binding Effect.HasAnimatedProperties.TrueString, ElementName=textBlock}">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF812A2A" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <Button x:Name="Button" Content="Calculate" HorizontalAlignment="Left" Margin="286,148,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox x:Name="TextBox_input" HorizontalAlignment="Left" Margin="152,148,0,0" TextWrapping="Wrap" Text="Amount $" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Label_result1" Content="Label" HorizontalAlignment="Left" Margin="674,199,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label_Result2" Content="Label" HorizontalAlignment="Left" Margin="674,148,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.498,0.578"/>
+        <TextBox HorizontalAlignment="Left" Margin="152,171,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="152,194,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
